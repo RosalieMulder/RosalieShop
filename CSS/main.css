@@ -3,9 +3,12 @@
    FONT LOAD (ADDED ONLY FIX)
    ========================= */
 
+/* =========================
+   FONT LOAD (FIXED)
+   ========================= */
+
 @font-face {
-    body {
-    font-family: Sitka, serif;
+    font-family: "RosalieFont";
     src: url("../Fonts/Rosaliefont.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
