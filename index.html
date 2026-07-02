@@ -14,6 +14,7 @@
 
 <body class="dark">
 
+<!-- ================= HEADER ================= -->
 <header>
     <div class="header">
 
@@ -35,18 +36,22 @@
     </div>
 </header>
 
+<!-- ================= NAVBAR ================= -->
 <nav class="NavBar">
   <div class="nav-container">
 
-     <a href="aboutus.html" class="mybutton">
+     <!-- about -->
+    <a href="aboutus.html" class="mybutton">
           <img src="uploads/Icons/about.png">
     </a>
 
+    <!-- Theme button -->
     <a href="indexlight.html" class="mybutton">
       <img src="uploads/Icons/Sun.png" alt="Light Mode">
     </a>
 
-    <select onchange="document.getElementById('gridFrame').src=this.value">
+    <!-- CATEGORY DROPDOWN (SWAPS GRID) -->
+    <select id="categorySelect">
 
       <option value="Grid/AllGrid.html">All Products</option>
 
@@ -65,23 +70,35 @@
   </div>
 </nav>
 
+<!-- ================= CONTENT ================= -->
 <section>
+
     <iframe id="gridFrame"
             src="Grid/AllGrid.html"
             style="width:100%; height:800px; border:none;">
     </iframe>
+
 </section>
 
+<!-- ================= FOOTER ================= -->
 <footer>
     <p>Contact</p>
     <p>Email: Blabla@blabla.nl</p>
 </footer>
 
+<!-- ================= LOGIC FIX ================= -->
 <script>
-  // FORCE DEFAULT (fixes GitHub weirdness)
-  window.onload = () => {
-    document.getElementById("gridFrame").src = "Grid/AllGrid.html";
-  };
+  const select = document.getElementById("categorySelect");
+  const frame = document.getElementById("gridFrame");
+
+  // FORCE DEFAULT
+  select.value = "Grid/AllGrid.html";
+  frame.src = "Grid/AllGrid.html";
+
+  // SWAP GRID
+  select.addEventListener("change", function () {
+    frame.src = this.value;
+  });
 </script>
 
 </body>
