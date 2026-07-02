@@ -18,28 +18,29 @@ img {
 }
 
 /* =========================
-   HEADER STRUCTURE (CRITICAL FIX)
+   HEADER STRUCTURE
    ========================= */
 
 header {
     position: relative;
+    width: 100%;
 }
 
 .header {
     position: relative;
     text-align: center;
-    z-index: 1;
 }
 
 /* Banner */
 .banner {
-    position: relative;
     width: 100%;
+    position: relative;
 }
 
 .banner img {
     width: 100%;
     height: auto;
+    display: block;
 }
 
 /* =========================
@@ -50,9 +51,11 @@ header {
     position: absolute;
     top: 21vh;
     left: 1vw;
-    z-index: 10;
+    z-index: 5;
+
     max-width: 25vw;
     max-height: 15vh;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,7 +76,7 @@ header {
 }
 
 /* =========================
-   HEADTEXT (FIXED STACKING)
+   HEADTEXT
    ========================= */
 
 .headtext-overlay {
@@ -81,19 +84,15 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
     padding: 2vw;
     border-radius: 1rem;
-    z-index: 5;
+    z-index: 4;
 
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-
-.headtext {
-    position: relative;
-    z-index: 6;
 }
 
 .headtext h1 {
@@ -107,14 +106,14 @@ header {
 }
 
 /* =========================
-   🧿 HEADER ICON (MANDALA)
+   HEADER ICON (MANDALA ONLY)
    ========================= */
 
 .theme-icon-header {
     position: absolute;
     top: 15px;
     right: 15px;
-    z-index: 999;
+    z-index: 10;
 
     width: 44px;
     height: 44px;
@@ -122,8 +121,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    border-radius: 50%;
 }
 
 .theme-icon-header img {
@@ -133,30 +130,33 @@ header {
 }
 
 /* =========================
-   NAVBAR (DIRECTLY UNDER HEADER)
+   NAVBAR (UNDER HEADER)
    ========================= */
 
 .NavBar {
     width: 100%;
     padding: 15px 0;
-    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     background: inherit;
     position: relative;
-    z-index: 2;
 }
 
 .nav-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
     align-items: center;
+    gap: 20px;
 }
 
-/* Theme button */
+/* ONLY NAV THEME BUTTON */
 .theme-icon-btn {
     width: 40px;
     height: 40px;
+
     display: flex;
     align-items: center;
     justify-content: center;
