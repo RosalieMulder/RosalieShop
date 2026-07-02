@@ -22,11 +22,11 @@ body {
     overflow-x: hidden;
 }
 
-button,
-a {
-    border-radius: 50%;
-}
+/* =========================
+   GLOBAL ICON BUTTON FIX (WORKING VERSION)
+   ========================= */
 
+/* ONLY icon-based links + buttons become circles */
 button,
 a:has(img) {
     width: 44px;
@@ -40,6 +40,7 @@ a:has(img) {
     overflow: hidden;
 }
 
+/* image inside button */
 button img,
 a:has(img) img {
     width: 100%;
@@ -47,7 +48,12 @@ a:has(img) img {
     object-fit: cover;
 }
 
-/* Responsive images */
+/* DO NOT round all <a> (this was breaking everything) */
+
+/* =========================
+   RESPONSIVE IMAGES
+   ========================= */
+
 img {
     max-width: 100%;
     height: auto;
@@ -130,7 +136,7 @@ header {
     text-align: center;
 }
 
-/* UPDATED: boxed title style */
+/* TITLE BOX */
 .headtext h1 {
     font-size: 5vw;
     margin: 0;
@@ -152,7 +158,7 @@ header {
 }
 
 /* =========================
-   NAVBAR (ONLY PLACE FOR ICON)
+   NAVBAR
    ========================= */
 
 .NavBar {
@@ -173,16 +179,7 @@ header {
     gap: 20px;
 }
 
-/* ONLY THEME BUTTON */
-.theme-icon-btn {
-    width: 40px;
-    height: 40px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
+/* optional: keep icon consistent */
 .theme-icon-btn img {
     width: 20px;
     height: 20px;
