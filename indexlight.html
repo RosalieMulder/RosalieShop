@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RosalieShop</title>
+
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/colors.css">
+    <link rel="stylesheet" href="CSS/theme-light.css">
+
+    <link rel="icon" type="image/png" href="uploads/Logos/logo_Simple.png">
+</head>
+
+<body class="light">
+
+<!-- ================= HEADER ================= -->
+<header>
+    <div class="header">
+
+        <div class="banner">
+            <img src="uploads/Banners/Banner.png" alt="Banner">
+        </div>
+
+        <div class="headtext-overlay">
+            <div class="headtext">
+                <h1>RosalieShop</h1>
+                <p>Art and Mystique</p>
+            </div>
+        </div>
+
+        <div class="logo">
+            <img src="uploads/Logos/logo.png" alt="Logo">
+        </div>
+
+    </div>
+</header>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="NavBar">
+  <div class="nav-container">
+
+     <!-- ABOUT -->
+    <a href="aboutus.html" class="mybutton">
+        <img src="uploads/Icons/about.png" alt="About">
+    </a>
+
+    <!-- THEME SWITCH -->
+    <a href="index.html" class="mybutton">
+        <img src="uploads/Icons/Moon.png" alt="Dark Mode">
+    </a>
+
+    <!-- CATEGORY DROPDOWN (SWAPS GRID) -->
+    <select onchange="document.getElementById('gridFrame').src=this.value">
+
+      <option value="Grid/allGrid.html" selected>All Products</option>
+
+      <option value="Grid/JRingsGrid.html">Jewelry - Rings</option>
+      <option value="Grid/JBraceletsGrid.html">Jewelry - Bracelets</option>
+      <option value="Grid/JEarringsGrid.html">Jewelry - Earrings</option>
+      <option value="Grid/JNecklacesGrid.html">Jewelry - Necklaces</option>
+      <option value="Grid/JOtherGrid.html">Jewelry - Other</option>
+
+      <option value="Grid/accessoriesGrid.html">Accessories</option>
+      <option value="Grid/herbGrid.html">Herbs</option>
+      <option value="Grid/plantGrid.html">Plants</option>
+
+    </select>
+
+  </div>
+</nav>
+
+<!-- ================= CONTENT (GRID SLOT) ================= -->
+<section>
+
+    <iframe id="gridFrame"
+            src="Grid/allGrid.html"
+            style="width:100%; height:800px; border:none;">
+    </iframe>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <p>Contact</p>
+    <p>Email: Blabla@blabla.nl</p>
+</footer>
+
+</body>
+</html>
