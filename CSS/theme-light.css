@@ -1,0 +1,38 @@
+/* =========================
+   DARK THEME
+   ========================= */
+
+body {
+    background-color: var(--Ivory);
+    color:  var(--hunter-green);
+}
+
+nav
+ {
+    background-color: var(--olive-green);
+    color: var(--hunter-green);
+}
+
+header,
+main,
+footer {
+    background-color: var(--Ivory);
+    color: var(--hunter-green);
+}
+
+/* Links */
+a {
+    color: var(--dodger-blue);
+}
+
+a:hover {
+    color: var(--tomato-red);
+}
+
+/* Table styling (optional but consistent) */
+table,
+th,
+td {
+    color: var(--Ivory);
+    border-color: var(--hunter-green);
+}
