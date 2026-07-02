@@ -14,7 +14,6 @@
 
 <body class="light">
 
-<!-- ================= HEADER ================= -->
 <header>
     <div class="header">
 
@@ -36,11 +35,10 @@
     </div>
 </header>
 
-<!-- ================= NAVBAR ================= -->
 <nav class="NavBar">
   <div class="nav-container">
 
-     <!-- ABOUT -->
+    <!-- ABOUT -->
     <a href="aboutus.html" class="mybutton">
         <img src="uploads/Icons/about.png" alt="About">
     </a>
@@ -50,10 +48,10 @@
         <img src="uploads/Icons/Moon.png" alt="Dark Mode">
     </a>
 
-    <!-- CATEGORY DROPDOWN (SWAPS GRID) -->
+    <!-- CATEGORY DROPDOWN -->
     <select onchange="document.getElementById('gridFrame').src=this.value">
 
-      <option value="Grid/AllGrid.html" selected>All Products</option>
+      <option value="Grid/AllGrid.html">All Products</option>
 
       <option value="Grid/JRingsGrid.html">Jewelry - Rings</option>
       <option value="Grid/JBraceletsGrid.html">Jewelry - Bracelets</option>
@@ -70,7 +68,6 @@
   </div>
 </nav>
 
-<!-- ================= CONTENT (GRID SLOT) ================= -->
 <section>
 
     <iframe id="gridFrame"
@@ -80,11 +77,16 @@
 
 </section>
 
-<!-- ================= FOOTER ================= -->
 <footer>
     <p>Contact</p>
     <p>Email: Blabla@blabla.nl</p>
 </footer>
+
+<script>
+  window.onload = () => {
+    document.getElementById("gridFrame").src = "Grid/AllGrid.html";
+  };
+</script>
 
 </body>
 </html>
