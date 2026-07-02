@@ -3,13 +3,13 @@
    ========================= */
 
 body {
-    background-color: var(--hunter-green);
+    background-color: var(--olive-green);
     color: var(--Ivory);
 }
 
 nav
  {
-    background-color: var(--olive-green);
+    background-color: var(--hunter-green);;
     color: var(--Ivory);
 }
 
@@ -17,7 +17,7 @@ header,
 main,
 footer {
     background-color: var(--hunter-green);
-    color: var(--Ivory);
+    color: var(--olive-green);
 }
 
 /* Links */
