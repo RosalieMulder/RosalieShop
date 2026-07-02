@@ -1,9 +1,20 @@
 /* =========================
+   FONT LOAD (ADDED ONLY FIX)
+   ========================= */
+
+@font-face {
+    font-family: "RosalieFont";
+    src: url("../Fonts/Rosaliefont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* =========================
    BASE RESET
    ========================= */
 
 body {
-    font-family: Sitka, serif;
+    font-family: "RosalieFont", Sitka, serif;
     font-size: 20px;
     line-height: 1.5;
     margin: 0;
@@ -145,7 +156,6 @@ header {
    HARD BLOCK (PREVENT OLD ICONS)
    ========================= */
 
-/* ensures old system cannot appear even if left in HTML */
 .theme-icon-header {
     display: none !important;
 }
