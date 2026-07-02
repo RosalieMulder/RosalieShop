@@ -1,21 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>Shop Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopName</title>
 
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="CSS/buttons.css">
+    <link rel="stylesheet" href="CSS/dark.css">
+
+    <link rel="icon" type="image/png" href="uploads/Logos/logo_Simple.png">
 </head>
 
-<body>
+<body class="dark">
 
-<nav class="navbar">
-    <a class="btn" href="home-light.html">☀ Light Home</a>
-    <a class="btn" href="home-dark.html">🌙 Dark Home</a>
+<header>
+    <div class="header">
+
+        <div class="banner">
+            <img src="uploads/Banners/Banner.png" alt="Banner">
+        </div>
+
+        <div class="headtext-overlay">
+            <div class="headtext">
+                <h1>ShopName</h1>
+                <p>Bonus text</p>
+            </div>
+        </div>
+
+        <div class="logo">
+            <img src="uploads/Logos/logo.png" alt="Logo">
+        </div>
+
+    </div>
+</header>
+
+<!-- NAVBAR -->
+<nav class="NavBar">
+    <div class="nav-container">
+
+        <!-- Auth button (kept from your original logic simplified for GitHub Pages) -->
+        <a href="index.html" class="buttondark">Home</a>
+
+        <!-- ICON ONLY THEME BUTTON -->
+        <a href="home-light.html" class="theme-icon-btn" title="Light Mode">
+            <img src="uploads/icons/sun.png" alt="Light">
+        </a>
+
+        <a href="home-dark.html" class="theme-icon-btn" title="Dark Mode">
+            <img src="uploads/icons/moon.png" alt="Dark">
+        </a>
+
+    </div>
 </nav>
 
-<h1>Choose a theme</h1>
+<!-- PRODUCT SECTION PLACEHOLDER -->
+<section>
+    <h2>Products</h2>
+</section>
+
+<footer>
+    <div class="footer">
+        <p>Contact</p>
+        <p>Email: Blabla@blabla.nl</p>
+    </div>
+</footer>
 
 </body>
 </html>
