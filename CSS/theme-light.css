@@ -1,0 +1,20 @@
+body.light {
+    background: #e9f0ea;
+    color: #1f2415;
+}
+
+/* navbar */
+body.light .navbar {
+    background: rgb(75, 94, 70);
+}
+
+/* buttons */
+body.light .btn {
+    background: #c9b01c;
+    color: #1f2415;
+}
+
+body.light .btn:hover {
+    background: #1f2415;
+    color: #e9f0ea;
+}

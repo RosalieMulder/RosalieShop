@@ -1,0 +1,153 @@
+/* Apply a CSS reset to remove browser default styles */
+a,button,.buttonlight, .buttondark, .submit-button, .back-link {
+
+    color: #E9F0EA;
+    font-family: Sitka, serif;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 30px;
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+    text-align: center;
+    text-decoration: none; /* For links styled as buttons */
+    display: inline-block; /* Ensure they behave like inline elements */
+    font-weight: bold; /* Make text stand out */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for 3D effect */
+    box-sizing: border-box; /* Ensure padding and border are included in element's width and height */
+}
+
+/* Style placeholder text for input and textarea elements */
+input::placeholder,
+textarea::placeholder {
+    color: rgb(25, 34, 10); /* Color of the placeholder text */
+    font-size: 30px; /* Font size for the placeholder text */
+    font-style: italic; /* Italic style for the placeholder text */
+    font-weight: normal; /* Font weight for the placeholder text */
+    text-decoration: none; /* No text decoration */
+}
+
+/* Vendor prefixes for older browser support (optional) */
+input::-webkit-input-placeholder { color: rgb(25, 34, 10); }
+input::-moz-placeholder { color: rgb(25, 34, 10); }
+input:-ms-input-placeholder { color: rgb(25, 34, 10); }
+input::-ms-input-placeholder { color: rgb(25, 34, 10); }
+
+textarea::-webkit-input-placeholder { color: rgb(25, 34, 10); }
+textarea::-moz-placeholder { color: rgb(25, 34, 10);; }
+textarea:-ms-input-placeholder { color: rgb(25, 34, 10); }
+textarea::-ms-input-placeholder { color: rgb(25, 34, 10); }
+
+/* Light Button */
+.buttonlight{
+    background-color: rgb(75, 94, 70); /* Light color */
+    color: #E9F0EA;
+    border: 2px solid rgb(65, 80, 60); /* Slightly darker border for definition */
+}
+
+.buttonlight:hover {
+    color: #1F2415;
+    background-color: rgb(201, 176, 28); /*Yellow*/
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
+
+/* Dark Button */
+.buttondark {
+    background-color: rgb(25, 34, 10); /* Dark color */
+    color: #E9F0EA;
+    border: 2px solid rgb(15, 22, 8); /* Slightly darker border for definition */
+}
+
+.buttondark:hover {
+    color: #1F2415;
+    background-color: rgb(201, 176, 28); /* Yellow
+    background on hover */
+    border-color: rgb(25, 34, 10); /* Lighter border on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
+
+
+.NavBarOption a, .NavBarOption button {
+    background-color: rgb(75, 94, 70); /* Light color */
+    color: #E9F0EA;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid rgb(65, 80, 60); /* Slightly darker border for definition */
+    display: inline-block; /* Ensure it behaves like a button */
+}
+
+.NavBarOption a:hover, .NavBarOption button:hover {
+    color: #1F2415;
+    background-color: rgb(201, 176, 28); /* Yellow */
+    border-color: rgb(75, 94, 70); /* Lighter border on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
+}
+
+/* Custom file input button */
+.file-input-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc; /* Border color */
+    background-color: rgb(75, 94, 70); /* Background color */
+    color: #E9F0EA; /* Text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-align: center; /* Center text inside */
+}
+
+/* Hover effect for the custom button */
+.file-input-button:hover {
+    color: #000000;
+    background-color: rgb(201, 176, 28); /*Yellow*/
+}
+/* Container for all dropdown items */
+.dropdown-group {
+    position: relative;
+    font-size: 16px;
+    border-radius: 8px;
+    background-color: rgb(151, 26, 7);
+    display: flex; /* Flexbox for alignment */
+    flex-direction: row; /* Arrange items horizontally */
+    align-items: flex-start; /* Align items to the start */
+    justify-content: center; /* Center items horizontally within the container */
+    text-align: center;
+    padding-top: 2.5vw; /* Adjust padding */
+    margin-top: 2vw;
+    min-height: 150px; /* Minimum height to ensure content fits */
+
+}
+
+/* Individual dropdown items (label + dropdown) */
+.dropdown-item {
+    display: flex;
+    flex-direction: column; /* Align label and dropdown vertically */
+    align-items: center; /* Center label and dropdown horizontally */
+    margin:1em; /* Space between each dropdown group */
+}
+
+/* Style for select elements (dropdowns) */
+.dropdown-group select {
+    width: 150px; /* Fixed width for consistency */
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #E9F0EA;
+    background-color: rgb(25, 34, 10);
+    color: #E9F0EA;
+    text-align: center;
+}
+
+.Boxes {
+    font-family: Sitka, serif;
+    font-size: 30px;
+    margin-top: 1vw;
+    height: 50px; /* Fixed width for consistency */
+    border-radius: 8px;
+    border: 1px solid rgb(25, 34, 10);
+    background-color:rgb(226, 208, 113);
+    color: rgb(25, 34, 10);
+    border: 2px solid rgb(65, 80, 60); /* Slightly darker border for definition */
+    text-align: center;
+}

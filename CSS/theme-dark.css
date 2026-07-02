@@ -1,0 +1,18 @@
+body.dark {
+    background: rgb(25, 34, 10);
+    color: #e9f0ea;
+}
+
+body.dark .navbar {
+    background: rgb(15, 22, 8);
+}
+
+body.dark .btn {
+    background: rgb(75, 94, 70);
+    color: #e9f0ea;
+}
+
+body.dark .btn:hover {
+    background: #c9b01c;
+    color: #1f2415;
+}
