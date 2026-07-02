@@ -2,8 +2,14 @@
    DARK THEME
    ========================= */
 
-body,
 header,
+{
+    background-color: var(--olive-green);
+    color: var(--Ivory);
+    border-color: var(--hunter-green);
+}
+
+body,
 main,
 footer,
 table,
