@@ -1,365 +1,72 @@
-/* Core styles for the entire site */
+/* Basic site base (GitHub Pages minimal) */
 
 body {
     font-family: Sitka, serif;
     font-size: 20px;
-    color: rgb(255, 255, 255);
     line-height: 1.5;
-    background-color: rgb(75, 94, 70);
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
-.header {
-    position: relative;
+/* Apply a CSS reset to remove browser default styles */
+a,button,.buttonlight, .buttondark, .submit-button, .back-link {
+
+    font-family: Sitka, serif;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 30px;
+    transition: all 0.3s ease; /* Smooth transition for all properties */
     text-align: center;
-    color: rgb(255, 255, 255);
+    text-decoration: none; /* For links styled as buttons */
+    display: inline-block; /* Ensure they behave like inline elements */
+    font-weight: bold; /* Make text stand out */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for 3D effect */
+    box-sizing: border-box; /* Ensure padding and border are included in element's width and height */
 }
 
-.banner {
-    position: relative;
-    width: 100%;
-}
-
-.banner img {
-    width: 100%;
-    height: auto;
-}
-
-/* Base logo styles */
-.logo {
-    position: absolute;
-    top: 21vh;
-    left: 1vw;
-    z-index: 10;
-    max-width: 25vw;
-    max-height: 15vh;
-    overflow: visible;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.logo img {
+/* Make images responsive */
+img {
     max-width: 100%;
     height: auto;
 }
 
-/* Adjustments for small screens */
-@media (max-width: 480px) {
-    .logo {
-        top: 2vh;
-        left: 2vw;
-        max-width: 30vw;
-        max-height: 15vh;
-    }
-}
-
-/* Headtext Overlay */
-.headtext-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgb(25, 34, 10);
-    border-radius: 1rem;
-    padding: 2vw;
-    z-index: 5;
-    box-sizing: border-box;
-    max-width: 80vw;
-    max-height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-/* Headtext */
-.headtext {
-    color: rgb(255, 255, 255);
-    z-index: 10;
-    text-shadow: 0.1em 0.1em 0.2em rgba(0, 0, 0, 0.7);
-}
-
-.headtext h1 {
-    font-size: 5vw;
-    margin: 0;
-}
-
-.headtext p {
-    font-size: 2.5vw;
-    margin: 0;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .headtext-overlay {
-        top: 40%;
-        left: 50%;
-        padding: 1.5vw;
-        max-width: 90vw;
-        max-height: 70vh;
-    }
-
-    .headtext h1 {
-        font-size: 6vw;
-    }
-
-    .headtext p {
-        font-size: 3vw;
-    }
-}
-
-@media (max-width: 480px) {
-    .headtext-overlay {
-        top: 35%;
-        left: 50%;
-        padding: 1vw;
-        max-width: 95vw;
-        max-height: 60vh;
-    }
-
-    .headtext h1 {
-        font-size: 7vw;
-    }
-
-    .headtext p {
-        font-size: 4vw;
-    }
-}
-
-/* Navigation Bar */
-.NavBar {
-    position: relative;
+/* Basic layout blocks */
+header,
+nav,
+main,
+footer {
     width: 100%;
-    background-color: rgba(25, 34, 10, 0.9);
+}
+
+/* Simple navigation spacing */
+nav {
     padding: 20px;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(25, 34, 10, 0.5);
 }
 
-.nav-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-/* Table styling */
-.TableClass {
+/* Basic table reset */
+table {
     width: 100%;
     border-collapse: collapse;
-    background-color: rgb(25, 34, 10);
-    color: rgb(255, 255, 255);
-    border-radius: 0.5rem;
-    overflow: hidden;
     text-align: center;
 }
 
-.theadclass {
-    background-color: rgb(75, 94, 70);
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    text-align: left;
-}
-
-.TableClass th, .TableClass td {
+th, td {
     padding: 12px;
-    border: 1px solid rgb(75, 94, 70);
+    border: 1px solid;
 }
 
-.TableClass th {
-    border-bottom: 3px solid rgb(75, 94, 70);
+/* Hide elements */
+.hidden {
+    display: none;
 }
 
-.TableClass td {
-    border-bottom: 1px solid rgb(75, 94, 70);
-}
-
-.TableClass tr:nth-child(even) {
-    background-color: rgb(50, 60, 50);
-}
-
-.tableimage {
-    width: 100px;
-    height: auto;
-}
-
-.tableimage img {
-    width: 100%;
-    height: auto;
-}
-
-/* Box styles */
-.LeftBoxLight {
-    border-radius: 1rem;
-    text-align: center;
-    padding: 2vw;
-    margin: 2vw;
-    display: flex;
-    justify-content: flex-start;
-}
-
-/* Basic BoxOne */
-.BoxOne {
-    background-color: rgb(25, 34, 10);
-    display: flex;
-    flex-direction: column; /* Ensure vertical stacking if needed */
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 1vw;
-    margin: 1vw;
-    border-radius: 1rem; /* Added border radius for consistency */
-}
-
-/* Basic BoxOne */
-.BoxOneNoCenter {
-    background-color: rgb(25, 34, 10);
-    display: flex;
-    flex-direction: column; /* Ensure vertical stacking if needed */
-    margin: 1vw;
-    border-radius: 1rem; /* Added border radius for consistency */
-}
-/* Basic BoxOne */
-.BoxOneLeftPad {
-    background-color: rgb(25, 34, 10);
-    display: flex;
-    flex-direction: column; /* Ensure vertical stacking if needed */
-    padding: 0vw 0vw 0vw 5vw;
-    margin: 1vw;
-    border-radius: 1rem; /* Added border radius for consistency */
-}
-
-/* Basic BoxTwo */
-.BoxTwo {
-    background-color: rgb(75, 94, 70);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 1vw;
-    margin: 1vw;
-    border-radius: 1rem; /* Added border radius for consistency */
-}
-
-/* Vertical BoxOne */
-.BoxOne-vertical {
-    background-color: rgb(25, 34, 10);
-    border-radius: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 2vw 1vw;
-    margin: 2vw;
-    min-height: 300px;
-}
-
-/* Vertical BoxTwo */
-.BoxTwo-vertical {
-    background-color: rgb(75, 94, 70);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 1vw 0.5vw;
-    margin: 1vw;
-    min-height: 200px;
-}
-
-/* Horizontal BoxOne */
-.BoxOne-horizontal {
-    background-color: rgb(25, 34, 10);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start; /* Align items to start */
-    text-align: center;
-    padding: 1vw; /* Add padding for spacing */
-    margin: 1vw;
-    gap: 10vw; /* Adds a gap between the children elements */
-    min-width: 200px;
-}
-
-/* Combined and fixed styles for BoxTwo-horizontal */
-.BoxTwo-horizontal {
-    background-color: rgb(75, 94, 70);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.5vw 1vw;
-    margin: 1vw;
-    min-width: 200px;
-}
-
-.BoxTwo-horizontal > * {
-    margin: 0 0.5vw;
-}
-
-.product-info {
-    flex: 1;
-    margin-left: 1vw;
-}
-
-.BasicIMG {
-    flex-shrink: 0;
-    width: 50%;
-}
-
-/* Ensure image fits within its container and behaves well with flexbox */
-.BasicIMG img {
-    width: 100%; /* Make image fit within its container */
-    height: auto; /* Maintain aspect ratio */
-}
-
-/* Container for the file input */
-.file-input-wrapper {
-    text-align: center;
-    margin: 1em;
-}
-
-/* Hide the actual file input */
-input[type="file"].product-image-input {
+/* Basic file input hiding (if you still use custom upload buttons) */
+input[type="file"] {
     position: absolute;
     width: 1px;
     height: 1px;
     opacity: 0;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-/* Footer styling */
-footer {
-    background-color: rgb(25, 34, 10);
-    color: rgb(255, 255, 255);
-    padding: 1em 0;
-    text-align: center;
-    width: 100%;
-    margin: 0;
-}
-
-footer p {
-    margin: 0;
-}
-
-/* Container styling */
-.container {
-    width: 100%;
-    margin: 0 auto;
-    padding: 1em;
-}
-
-/* Hidden class */
-.hidden {
-    display: none;
 }
