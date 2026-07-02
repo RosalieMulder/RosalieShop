@@ -1,18 +1,40 @@
-body.dark {
-    background: rgb(25, 34, 10);
-    color: #e9f0ea;
+/* Dark theme styles */
+
+/* Basic site base (GitHub Pages minimal) */
+
+body {
+    background-color: rgb(75, 94, 70);
+    color: rgb(255, 255, 255);
 }
 
-body.dark .navbar {
-    background: rgb(15, 22, 8);
+/* Apply a CSS reset to remove browser default styles */
+a, button, .buttonlight, .buttondark, .submit-button, .back-link {
+    color: #1e90ff;
 }
 
-body.dark .btn {
-    background: rgb(75, 94, 70);
-    color: #e9f0ea;
+a:hover {
+    color: #ff6347;
 }
 
-body.dark .btn:hover {
-    background: #c9b01c;
-    color: #1f2415;
+
+/* Basic layout blocks */
+header,
+nav,
+main,
+footer {
+    background-color: rgb(25, 34, 10);
+    color: rgb(255, 255, 255);
+    border-bottom: 1px solid #444;
 }
+
+/* Simple navigation spacing */
+nav,
+table,
+th,
+td
+{
+    color: #ff6347;
+}
+
+
+

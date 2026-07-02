@@ -1,20 +1,38 @@
-body.light {
-    background: #e9f0ea;
-    color: #1f2415;
+/* light theme styles */
+
+/* Basic site base (GitHub Pages minimal) */
+
+body {
+    background-color: rgb(75, 94, 70);
+    color: rgb(255, 255, 255);
 }
 
-/* navbar */
-body.light .navbar {
-    background: rgb(75, 94, 70);
+/* Apply a CSS reset to remove browser default styles */
+a, button, .buttonlight, .buttondark, .submit-button, .back-link {
+    color: #1e90ff;
 }
 
-/* buttons */
-body.light .btn {
-    background: #c9b01c;
-    color: #1f2415;
+a:hover {
+    color: #ff6347;
 }
 
-body.light .btn:hover {
-    background: #1f2415;
-    color: #e9f0ea;
+
+/* Basic layout blocks */
+header,
+nav,
+main,
+footer {
+    background-color: rgb(25, 34, 10);
+    color: rgb(255, 255, 255);
+    border-bottom: 1px solid #444;
 }
+
+/* Simple navigation spacing */
+nav,
+table,
+th,
+td
+{
+    color: #ff6347;
+}
+

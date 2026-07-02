@@ -8,8 +8,17 @@ body {
     padding: 0;
 }
 
-/* Apply a CSS reset to remove browser default styles */
-a, button, .buttonlight, .buttondark, .submit-button, .back-link {
+/* Normal links (not buttons) */
+a {
+    text-decoration: none;
+}
+
+/* Button styling only */
+.buttonlight,
+.buttondark,
+.submit-button,
+.back-link,
+button {
     font-family: Sitka, serif;
     border: none;
     padding: 10px 20px;
@@ -25,22 +34,38 @@ a, button, .buttonlight, .buttondark, .submit-button, .back-link {
     box-sizing: border-box;
 }
 
-/* 🔘 FIXED THEME ICON BUTTON (IMPORTANT) */
+/* Navigation */
+.NavBar {
+    padding: 12px 20px;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+/* Theme icon button */
 .theme-icon-btn {
-    width: 44px;
-    height: 44px;
+    width: 38px;
+    height: 38px;
     padding: 0;
+    margin: 0;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    flex-shrink: 0;
+    box-sizing: border-box;
 }
 
-/* icon inside button */
+/* Theme icon */
 .theme-icon-btn img {
-    width: 22px;
-    height: 22px;
+    width: 18px;
+    height: 18px;
+    max-width: 18px;
+    max-height: 18px;
     object-fit: contain;
     display: block;
 }
@@ -59,12 +84,6 @@ footer {
     width: 100%;
 }
 
-/* Simple navigation spacing */
-nav {
-    padding: 20px;
-    text-align: center;
-}
-
 /* Basic table reset */
 table {
     width: 100%;
@@ -72,7 +91,8 @@ table {
     text-align: center;
 }
 
-th, td {
+th,
+td {
     padding: 12px;
     border: 1px solid;
 }
