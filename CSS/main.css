@@ -9,21 +9,40 @@ body {
 }
 
 /* Apply a CSS reset to remove browser default styles */
-a,button,.buttonlight, .buttondark, .submit-button, .back-link {
-
+a, button, .buttonlight, .buttondark, .submit-button, .back-link {
     font-family: Sitka, serif;
     border: none;
     padding: 10px 20px;
-    border-radius: 8px; /* Rounded corners */
+    border-radius: 8px;
     cursor: pointer;
     font-size: 30px;
-    transition: all 0.3s ease; /* Smooth transition for all properties */
+    transition: all 0.3s ease;
     text-align: center;
-    text-decoration: none; /* For links styled as buttons */
-    display: inline-block; /* Ensure they behave like inline elements */
-    font-weight: bold; /* Make text stand out */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for 3D effect */
-    box-sizing: border-box; /* Ensure padding and border are included in element's width and height */
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+/* 🔘 FIXED THEME ICON BUTTON (IMPORTANT) */
+.theme-icon-btn {
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* icon inside button */
+.theme-icon-btn img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    display: block;
 }
 
 /* Make images responsive */
@@ -63,7 +82,7 @@ th, td {
     display: none;
 }
 
-/* Basic file input hiding (if you still use custom upload buttons) */
+/* Basic file input hiding */
 input[type="file"] {
     position: absolute;
     width: 1px;
