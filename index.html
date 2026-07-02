@@ -14,7 +14,6 @@
 
 <body class="dark">
 
-<!-- ================= HEADER ================= -->
 <header>
     <div class="header">
 
@@ -36,66 +35,58 @@
     </div>
 </header>
 
-<!-- ================= NAVBAR ================= -->
 <nav class="NavBar">
   <div class="nav-container">
 
-     <!-- about -->
     <a href="aboutus.html" class="mybutton">
-          <img src="uploads/Icons/about.png">
+        <img src="uploads/Icons/about.png">
     </a>
 
-    <!-- Theme button -->
     <a href="indexlight.html" class="mybutton">
-      <img src="uploads/Icons/Sun.png" alt="Light Mode">
+        <img src="uploads/Icons/Sun.png" alt="Light Mode">
     </a>
 
-    <!-- CATEGORY DROPDOWN (SWAPS GRID) -->
     <select id="categorySelect">
 
-      <option value="Grid/AllGrid.html">All Products</option>
+      <option value="./Grid/AllGrid.html">All Products</option>
 
-      <option value="Grid/JRingsGrid.html">Jewelry - Rings</option>
-      <option value="Grid/JBraceletsGrid.html">Jewelry - Bracelets</option>
-      <option value="Grid/JEarringsGrid.html">Jewelry - Earrings</option>
-      <option value="Grid/JNecklacesGrid.html">Jewelry - Necklaces</option>
-      <option value="Grid/JOtherGrid.html">Jewelry - Other</option>
+      <option value="./Grid/JRingsGrid.html">Jewelry - Rings</option>
+      <option value="./Grid/JBraceletsGrid.html">Jewelry - Bracelets</option>
+      <option value="./Grid/JEarringsGrid.html">Jewelry - Earrings</option>
+      <option value="./Grid/JNecklacesGrid.html">Jewelry - Necklaces</option>
+      <option value="./Grid/JOtherGrid.html">Jewelry - Other</option>
 
-      <option value="Grid/accessoriesGrid.html">Accessories</option>
-      <option value="Grid/herbGrid.html">Herbs</option>
-      <option value="Grid/plantGrid.html">Plants</option>
+      <option value="./Grid/accessoriesGrid.html">Accessories</option>
+      <option value="./Grid/herbGrid.html">Herbs</option>
+      <option value="./Grid/plantGrid.html">Plants</option>
 
     </select>
 
   </div>
 </nav>
 
-<!-- ================= CONTENT ================= -->
 <section>
-
     <iframe id="gridFrame"
-            src="Grid/AllGrid.html"
+            src="./Grid/AllGrid.html"
             style="width:100%; height:800px; border:none;">
     </iframe>
-
 </section>
 
-<!-- ================= FOOTER ================= -->
 <footer>
     <p>Contact</p>
     <p>Email: Blabla@blabla.nl</p>
 </footer>
 
-<!-- ================= LOGIC FIX ================= -->
 <script>
   const select = document.getElementById("categorySelect");
   const frame = document.getElementById("gridFrame");
 
-  // FORCE DEFAULT
-  select.value = "Grid/AllGrid.html";
-  frame.src = "Grid/AllGrid.html";
+  // FORCE SAME PATH ALWAYS
+  const DEFAULT = "./Grid/AllGrid.html";
 
-  // SWAP GRID
+  select.value = DEFAULT;
+  frame.src = DEFAULT;
+
   select.addEventListener("change", function () {
     frame.src = this.value;
   });
