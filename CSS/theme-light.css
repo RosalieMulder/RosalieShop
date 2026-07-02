@@ -1,0 +1,30 @@
+.headtext h1 {
+    background-color: var(--olive-green) !important;
+    color: var(--Ivory) !important;
+}
+
+/* main surfaces */
+body,
+footer,
+table,
+th,
+td {
+    background-color: var(--Ivory);
+    color: var(--hunter-green);
+    border-color: var(--hunter-green);
+}
+
+/* nav */
+nav {
+    background-color: var(--olive-green);
+    color: var(--hunter-green);
+}
+
+/* links */
+a {
+    color: var(--dodger-blue);
+}
+
+a:hover {
+    color: var(--tomato-red);
+}
