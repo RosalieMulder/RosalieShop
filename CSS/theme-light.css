@@ -1,10 +1,10 @@
 /* =========================
-   LIGHT THEME
+   DARK THEME
    ========================= */
 
 body {
     background-color: var(--Ivory);
-    color: var(--hunter-green);
+    color:  var(--hunter-green);
 }
 
 nav
@@ -17,22 +17,22 @@ header,
 main,
 footer {
     background-color: var(--Ivory);
-    color: var(--Ivory);
+    color: var(--hunter-green);
 }
 
 /* Links */
 a {
-    color: var(--hunter-green);
+    color: var(--dodger-blue);
 }
 
 a:hover {
     color: var(--tomato-red);
 }
 
-/* Table styling */
+/* Table styling (optional but consistent) */
 table,
 th,
 td {
-    color: var(--hunter-green);
-    border-color: var(--olive-green);
+    color: var(--Ivory);
+    border-color: var(--hunter-green);
 }
