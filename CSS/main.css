@@ -1,25 +1,29 @@
-/* Basic site base (GitHub Pages minimal) */
+/* =========================
+   CUSTOM FONT LOAD
+   ========================= */
+
+@font-face {
+    font-family: "RosalieFont";
+    src: url("../Fonts/Rosaliefont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* =========================
+   BASE SITE STYLES
+   ========================= */
 
 body {
-    font-family: Sitka, serif;
+    font-family: "RosalieFont", Sitka, serif;
     font-size: 20px;
     line-height: 1.5;
     margin: 0;
     padding: 0;
 }
 
-/* Normal links (not buttons) */
-a {
-    text-decoration: none;
-}
-
-/* Button styling only */
-.buttonlight,
-.buttondark,
-.submit-button,
-.back-link,
-button {
-    font-family: Sitka, serif;
+/* FIXED: removed broken comma */
+a, button {
+    font-family: "RosalieFont", Sitka, serif;
     border: none;
     padding: 10px 20px;
     border-radius: 8px;
@@ -34,49 +38,57 @@ button {
     box-sizing: border-box;
 }
 
-/* Navigation */
-.NavBar {
-    padding: 12px 20px;
+/* =========================
+   HEADER STRUCTURE FIX
+   ========================= */
+
+header {
+    position: relative;
 }
 
-.nav-container {
+.header {
+    position: relative;
+}
+
+/* =========================
+   ICON ON HEADER (MANDALA BUTTON FIX)
+   ========================= */
+
+.theme-icon-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    width: 44px;
+    height: 44px;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 12px;
-}
 
-/* Theme icon button */
-.theme-icon-btn {
-    width: 38px;
-    height: 38px;
+    border-radius: 50%;
     padding: 0;
     margin: 0;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    box-sizing: border-box;
+
+    z-index: 999;
 }
 
-/* Theme icon */
 .theme-icon-btn img {
-    width: 18px;
-    height: 18px;
-    max-width: 18px;
-    max-height: 18px;
+    width: 20px;
+    height: 20px;
     object-fit: contain;
     display: block;
 }
 
-/* Make images responsive */
+/* =========================
+   GLOBAL ELEMENTS
+   ========================= */
+
 img {
     max-width: 100%;
     height: auto;
 }
 
-/* Basic layout blocks */
 header,
 nav,
 main,
@@ -84,7 +96,6 @@ footer {
     width: 100%;
 }
 
-/* Basic table reset */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -95,17 +106,4 @@ th,
 td {
     padding: 12px;
     border: 1px solid;
-}
-
-/* Hide elements */
-.hidden {
-    display: none;
-}
-
-/* Basic file input hiding */
-input[type="file"] {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    opacity: 0;
 }

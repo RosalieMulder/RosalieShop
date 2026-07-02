@@ -1,40 +1,33 @@
-/* Dark theme styles */
-
-/* Basic site base (GitHub Pages minimal) */
+/* =========================
+   DARK THEME
+   ========================= */
 
 body {
-    background-color: rgb(75, 94, 70);
-    color: rgb(255, 255, 255);
+    background-color: var(--olive-green);
+    color: var(--white);
 }
 
-/* Apply a CSS reset to remove browser default styles */
-a, button, .buttonlight, .buttondark, .submit-button, .back-link {
-    color: #1e90ff;
-}
-
-a:hover {
-    color: #ff6347;
-}
-
-
-/* Basic layout blocks */
 header,
 nav,
 main,
 footer {
-    background-color: rgb(25, 34, 10);
-    color: rgb(255, 255, 255);
-    border-bottom: 1px solid #444;
+    background-color: var(--hunter-green);
+    color: var(--white);
 }
 
-/* Simple navigation spacing */
-nav,
+/* Links */
+a {
+    color: var(--dodger-blue);
+}
+
+a:hover {
+    color: var(--tomato-red);
+}
+
+/* Table styling (optional but consistent) */
 table,
 th,
-td
-{
-    color: #ff6347;
+td {
+    color: var(--white);
+    border-color: var(--hunter-green);
 }
-
-
-
