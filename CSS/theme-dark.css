@@ -4,20 +4,20 @@
 
 body {
     background-color: var(--hunter-green);
-    color: var(--PaleGold);
+    color: var(--Ivory);
 }
 
 nav
  {
     background-color: var(--olive-green);
-    color: var(--PaleGold);
+    color: var(--Ivory);
 }
 
 header,
 main,
 footer {
     background-color: var(--hunter-green);
-    color: var(--PaleGold);
+    color: var(--Ivory);
 }
 
 /* Links */
@@ -33,6 +33,6 @@ a:hover {
 table,
 th,
 td {
-    color: var(--PaleGold);
+    color: var(--Ivory);
     border-color: var(--hunter-green);
 }
