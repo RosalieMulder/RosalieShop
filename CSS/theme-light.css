@@ -7,8 +7,13 @@ body {
     color: var(--hunter-green);
 }
 
+nav
+ {
+    background-color: var(--white);
+    color: var(--hunter-green);
+}
+
 header,
-nav,
 main,
 footer {
     background-color: var(--olive-green);

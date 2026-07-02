@@ -3,16 +3,21 @@
    ========================= */
 
 body {
+    background-color: var(--hunter-green);
+    color: var(--PaleGold);
+}
+
+nav
+ {
     background-color: var(--olive-green);
-    color: var(--white);
+    color: var(--PaleGold);
 }
 
 header,
-nav,
 main,
 footer {
     background-color: var(--hunter-green);
-    color: var(--white);
+    color: var(--PaleGold);
 }
 
 /* Links */
@@ -28,6 +33,6 @@ a:hover {
 table,
 th,
 td {
-    color: var(--white);
+    color: var(--PaleGold);
     border-color: var(--hunter-green);
 }
