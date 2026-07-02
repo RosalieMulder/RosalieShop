@@ -1,0 +1,35 @@
+/* =========================
+   LIGHT THEME
+   ========================= */
+
+h1,
+{
+    background-color: var(--olive-green);
+    color: var(--Ivory);
+}
+
+body,
+footer,
+table,
+th,
+td
+{
+    background-color: var(--Ivory);
+    color:  var(--hunter-green);
+    border-color: var(--hunter-green);
+}
+
+nav
+ {
+    background-color: var(--olive-green);
+    color: var(--hunter-green);
+}
+
+/* Links */
+a {
+    color: var(--dodger-blue);
+}
+
+a:hover {
+    color: var(--tomato-red);
+}
