@@ -1,45 +1,24 @@
 /* =========================
-   CUSTOM FONT LOAD
-   ========================= */
-
-@font-face {
-    font-family: "RosalieFont";
-    src: url("../Fonts/Rosaliefont.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
-
-/* =========================
-   BASE SITE STYLES
+   BASE RESET
    ========================= */
 
 body {
-    font-family: "RosalieFont", Sitka, serif;
+    font-family: Sitka, serif;
     font-size: 20px;
     line-height: 1.5;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
-/* FIXED: removed broken comma */
-a, button {
-    font-family: "RosalieFont", Sitka, serif;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 30px;
-    transition: all 0.3s ease;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-weight: bold;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    box-sizing: border-box;
+/* Responsive images */
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 /* =========================
-   HEADER STRUCTURE FIX
+   HEADER STRUCTURE (CRITICAL FIX)
    ========================= */
 
 header {
@@ -48,16 +27,94 @@ header {
 
 .header {
     position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+/* Banner */
+.banner {
+    position: relative;
+    width: 100%;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
 }
 
 /* =========================
-   ICON ON HEADER (MANDALA BUTTON FIX)
+   LOGO
    ========================= */
 
-.theme-icon-btn {
+.logo {
+    position: absolute;
+    top: 21vh;
+    left: 1vw;
+    z-index: 10;
+    max-width: 25vw;
+    max-height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+/* Mobile logo fix */
+@media (max-width: 480px) {
+    .logo {
+        top: 2vh;
+        left: 2vw;
+        max-width: 30vw;
+    }
+}
+
+/* =========================
+   HEADTEXT (FIXED STACKING)
+   ========================= */
+
+.headtext-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2vw;
+    border-radius: 1rem;
+    z-index: 5;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.headtext {
+    position: relative;
+    z-index: 6;
+}
+
+.headtext h1 {
+    font-size: 5vw;
+    margin: 0;
+}
+
+.headtext p {
+    font-size: 2.5vw;
+    margin: 0;
+}
+
+/* =========================
+   🧿 HEADER ICON (MANDALA)
+   ========================= */
+
+.theme-icon-header {
     position: absolute;
     top: 15px;
     right: 15px;
+    z-index: 999;
 
     width: 44px;
     height: 44px;
@@ -67,34 +124,52 @@ header {
     justify-content: center;
 
     border-radius: 50%;
-    padding: 0;
-    margin: 0;
+}
 
-    z-index: 999;
+.theme-icon-header img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+/* =========================
+   NAVBAR (DIRECTLY UNDER HEADER)
+   ========================= */
+
+.NavBar {
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+
+    background: inherit;
+    position: relative;
+    z-index: 2;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Theme button */
+.theme-icon-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .theme-icon-btn img {
     width: 20px;
     height: 20px;
-    object-fit: contain;
-    display: block;
 }
 
 /* =========================
-   GLOBAL ELEMENTS
+   TABLES
    ========================= */
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-header,
-nav,
-main,
-footer {
-    width: 100%;
-}
 
 table {
     width: 100%;
@@ -102,8 +177,16 @@ table {
     text-align: center;
 }
 
-th,
-td {
+th, td {
     padding: 12px;
     border: 1px solid;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    text-align: center;
+    padding: 1em 0;
 }
