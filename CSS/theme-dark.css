@@ -20,11 +20,45 @@ nav {
     color: var(--Ivory);
 }
 
-/* links */
+button,
 a {
-    color: var(--dodger-blue);
+    background-color: var(--Ivory);
+    color: var(--hunter-green);
+    border-color: var(--hunter-green);
 }
 
 a:hover {
     color: var(--tomato-red);
+}
+
+/* =========================
+   SCROLLBARS (CHROME / EDGE / SAFARI)
+   ========================= */
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--hunter-green);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--olive-green);
+    border-radius: 10px;
+    border: 2px solid var(--hunter-green);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--tomato-red);
+}
+
+/* =========================
+   SCROLLBARS (FIREFOX)
+   ========================= */
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--olive-green) var(--hunter-green);
 }

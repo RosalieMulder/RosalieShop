@@ -26,6 +26,17 @@ button,
 a {
     border-radius: 50%;
 }
+
+.mybutton2 {
+
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+}
+
 .mybutton {
     width: 44px;
     height: 44px;
@@ -183,6 +194,33 @@ table {
 th, td {
     padding: 12px;
     border: 1px solid;
+}
+
+/* =========================
+   CLEAN IFRAME SCROLL STYLE
+   ========================= */
+
+iframe {
+    width: 100%;
+    border: none;
+    overflow: hidden;
+    display: block;
+}
+
+/* Hide scrollbar (Chrome / Edge / Safari) */
+iframe::-webkit-scrollbar {
+    display: none;
+}
+
+/* Firefox scrollbar removal (inside iframe content only works if same-origin styling) */
+iframe {
+    scrollbar-width: none;
+}
+
+/* Optional: cleaner section spacing */
+section {
+    margin: 0;
+    padding: 0;
 }
 
 /* =========================
